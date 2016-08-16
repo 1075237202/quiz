@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script language="JavaScript" src="./js/quiz.js"> </script>
+</head>
+<body onload="next_quiz()">
+<!-- 第一层div  大框-->
+<div>
+    <div style=" background:#222;  width:740px; height: 350px; float:left; margin-left: 250px; margin-top: 40px;">
+       <div  style="float:left">
+           <br><br><br><br><br>
+           <img src="./images/leftArrow.PNG" onclick="pre_quiz()">
+       </div>
+        <!--  第二层div  题目 -->
+        <div style="background:#bbb;  width:590px; height:150px; float:left;margin-top: 10px; padding:0 5px 2px 5px">
+            <p id="title">title</p>
+            <form id="form_radio">
+                <input type="radio" id="item_a" name="vehicle">radio_a
+                <input type="radio" id="item_b" name="vehicle">radio_b<br>
+                <input type="radio" id="item_c" name="vehicle" >radio_c
+                <input type="radio" id="item_d" name="vehicle" >radio_d
+            </form>
+        </div>
+        <div style="float:left">
+            <br><br><br><br><br>
+            <img src="./images/rightArrow.png" onclick="next_quiz()">
+        </div>
+
+        <div style="background:#ccc;  width:590px; height:170px; float:left; margin: 5px 0px 2px 67px; padding:0 5px 2px 5px">
+            <br>
+            <img src="./images/submit.PNG" height="42" width="50" onclick="submit_quiz()">
+            <img id="loser" src="./images/loser.png" height="50" width="56" hidden="true" >
+            <img id="smile" src="./images/smile.png" height="50" width="56" hidden="true">
+        <textarea  id="bonus" style="width:450px;height:140px;" disabled="disabled" hidden="true">textarea</textarea>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</body>
+</html>
